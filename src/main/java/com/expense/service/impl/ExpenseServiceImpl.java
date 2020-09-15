@@ -53,7 +53,7 @@ public class ExpenseServiceImpl implements ExpenseService {
 
 	@Override
 	public void deleteById(Long expenseId) {
-		String msg = "message";
+	
                 //Buggy Code(ExpenseControllerTest.testDeleteExpense())
 		//log.info("Debug delete");
 		
