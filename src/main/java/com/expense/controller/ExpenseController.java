@@ -96,7 +96,8 @@ public class ExpenseController {
 	 */
 	@PostMapping("/submit-form")
 	public String submitForm(@ModelAttribute("Expense") ExpenseDTO expenseDTO, Model model) {
-		log.info("in submitForm: " + expenseDTO);
+		// Envia reporte de gastos
+                log.info("in submitForm: " + expenseDTO);
 
 		if (expenseDTO.getId() != null) {
 			log.info("Modify: " + expenseDTO.getId());
@@ -126,6 +127,7 @@ public class ExpenseController {
 	 */
 
 	private Expense mapDTOToModel(ExpenseDTO expenseDTO) {
+                
 		Expense expense = new Expense();
 		expense = expenseMapper.dtoToModelMap(expenseDTO);
 		User user = userService.getById(expenseDTO.getUserId());
