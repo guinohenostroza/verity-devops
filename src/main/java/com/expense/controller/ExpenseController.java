@@ -96,7 +96,7 @@ public class ExpenseController {
 	 */
 	@PostMapping("/submit-form")
 	public String submitForm(@ModelAttribute("Expense") ExpenseDTO expenseDTO, Model model) {
-		// Envia reporte de gastos
+		
                 log.info("in submitForm: " + expenseDTO);
 
 		if (expenseDTO.getId() != null) {
