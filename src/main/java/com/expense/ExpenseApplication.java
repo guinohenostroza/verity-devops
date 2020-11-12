@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 //Main Class For starting Expense management application
 @SpringBootApplication
 public class ExpenseApplication extends SpringBootServletInitializer {
-
+    // Comment
 	public static void main(String[] args) {
 		SpringApplication.run(ExpenseApplication.class, args);
 	}
